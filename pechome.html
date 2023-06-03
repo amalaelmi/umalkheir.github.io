@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PECC HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css"> </link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<body>
+    <section class="header"> 
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="">HOME</a></li>
+                    <li> <a href="">ABOUT</a></li>
+                    <li> <a href="">LOGIN</a></li>
+                    <li> <a href="">BLOG</a></li>
+                    <li> <a href="">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="text">
+        <h1>Peer  Educators and Counseling Club </h1>
+        <p> Peer Educators and Counseling club is an auspicious  club that is open to all USIU students irrespective of your Major.</p>
+        <a href="" class="hero-btn"> Visit us to know more</a>
+    </div>
+    </section>
+    <section class="ABOUT">
+        <h1>ABOUT</h1>
+        <p>Come and be an active member in events and activities on- and off-campus<br>
+            Graduate with a certificate as a well rounded, equipped peer educator and counselor and a positively life-appreciating individual via a series of trainings and opportunities in our activities to apply learned skills<br>
+            Give back to the society through our interactive community service events</p>
+            <div class="row">
+                <div class="about-col">
+                    <h3>Activities</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magnam fugiat quod quia ut, dolor corporis ipsam facilis similique, ipsum distinctio natus harum officia accusamus odit veniam, iusto doloribus saepe!</p>
+
+                </div>
+                <div class="about-col">
+                    <h3>Requirements</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magnam fugiat quod quia ut, dolor corporis ipsam facilis similique, ipsum distinctio natus harum officia accusamus odit veniam, iusto doloribus saepe!</p>
+                    
+                </div>
+                <div class="about-col">
+                    <h3>ABOUT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magnam fugiat quod quia ut, dolor corporis ipsam facilis similique, ipsum distinctio natus harum officia accusamus odit veniam, iusto doloribus saepe!</p>
+                    
+                </div>
+
+            </div>
+    </section>
+    <section class="LOGIN">
+      <form id="signup-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </section>
+
+      <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var formData = new FormData(this);
+
+  fetch('/path/to/server-side-script.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
+});
+document.getElementById('signup-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var formData = new FormData(this);
+
+  fetch('/path/to/server-side-script.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+    // Redirect the user to the "You have been marked present" page
+    window.location.href = '/path/to/success-page.html';
+  });
+});
+
+      </script>
+
+
+
+</body>
