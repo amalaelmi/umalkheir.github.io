@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan G</title>
+    <style type="text/css">
+        body {
+            background-color: #3d47d4;
+        }
+        
+        .box {
+            width: 80%;
+            height: fit-content;
+            border: 2px solid black;
+            border-radius: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            background-color: #eee;
+        }
+        
+        .box input {
+            background-color: #fff;
+            width: fit-content;
+        }
+        
+        .box input:hover {
+            border: 2px #8C54C4 solid;
+            transition: 0.5s;
+        }
+        
+        .box label {
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+        
+        .box h2 {
+            font-size: 2.2em;
+            color: #5E0DB2;
+        }
+        
+        .box input[type=submit],
+        .box input[type=reset] {
+            background-color: #8C54C4;
+        }
+        
+        @media screen and (max-width: 796px) {
+            .box {
+                margin: 2em;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1800px) {
+            .box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<bod>
+    <form>
+        <div class="box">
+            <a>
+                <h2>Personal Information</h2>
+            </a>
+            <label for="title">Title (e.g Mr, Mrs, Ms, Hon, Dr, Prof, etc)</label><br>
+            <input type="radio" name="title" value="Mr">
+            <label for="Mr">Mr</label>
+            <input type="radio" name="title" value="Mrs">
+            <label for="Mrs">Mrs</label>
+            <input type="radio" name="title" value="Ms">
+            <label for="Ms">Ms</label><br>
+            <input type="radio" name="title" value="Hon">
+            <label for="Hon">Hon</label>
+            <input type="radio" name="title" value="Dr">
+            <label for="Dr">Dr</label>
+            <input type="radio" name="title" value="Prof">
+            <label for="Prof">Prof</label><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First name" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Last name" value=""><br>
+            <label for="DOB">Birth Date</label><br>
+            <input type="date" id="DOB" name="DOB" value=""><br>
+            <label for="Marital">Marital Status</label><br>
+            <input type="text" id="lname" name="lname" placeholder="(e.g Single, Married, etc)" value=""><br>
+        </div>
+        <div class="box">
+            <h2>Contact Information</h2>
+            <label for="phone">Mobile Number</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="address">Physical Address </label><br>
+            <input type="text" id="address" name="address" placeholder="(e.g 87 Mpaka Road Westlands, Nairobi, Kenya)." value=""><br>
+            <label for="timeAtAddress">How long have lived at your given address?</label><br>
+            <input type="radio" name="yearofexp" placeholder=" (e.g 0 - 2 years, 3 – 5 years, 5+ years, etc)" value="0 - 2">
+            <label for="xp1">0 - 2 years</label><br>
+            <input type="radio" name="yearofexp" value="3 – 5">
+            <label for="xp2">3 – 5 years</label><br>
+            <input type="radio" name="yearofexp" value="5+">
+            <label for="xp3">5+ years</label><br>
+        </div>
+        <div class="box">
+            <h2>Employment Information</h2>
+            <label for="Employer">Present Employer</label><br>
+            <input type="text" id="Employer" name="Employer" value=""><br>
+            <label for="Occupation">Occupation</label><br>
+            <input type="text" id="Occupation" name="Occupation" value=""><br>
+            <label for="YearofXP">Years of Experience</label><br>
+            <input type="radio" name="yearofexp" value="0 - 2">
+            <label for="xp1">0 - 2 years</label><br>
+            <input type="radio" name="yearofexp" value="3 – 5">
+            <label for="xp2">3 – 5 years</label><br>
+            <input type="radio" name="yearofexp" value="5+">
+            <label for="xp3">5+ years</label><br>
+            <label for="GMI">Gross monthly income</label><br>
+            <input type="text" id="GMI" name="GMI" value=""><br><br>
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </div>
+    </form>
+</bod>
+
+</html>
